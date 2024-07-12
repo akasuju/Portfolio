@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  .container-fluid {
+    background-color: #e9e9f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .covid-tracker-app {
+      background-color: white;
+      width: 336px;
+      box-shadow: 0px 0px 47px rgba(147, 147, 147, 0.53);
+      border-radius: 28px;
+
+      .welcome-sec {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 20px 5px 20px;
+        .greeting {
+          .hello {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            h5 {
+              display: inline;
+              font-weight: bold;
+              margin: 0;
+              margin-right: 6px;
+              font-size: 16px;
+            }
+            .iconify {
+              font-size: 18px;
+            }
+          }
+
+          p {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #848899;
+          }
+        }
+        .profile-pic {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: -3px 2px 7px rgba(53, 52, 52, 0.25);
+          }
+        }
+      }
+      .help-container {
+        padding: 0 20px;
+        .checkup-sec {
+          display: flex;
+          background: #fb5c71;
+          box-shadow: 0px 9px 16px rgba(191, 181, 181, 0.67);
+          border-radius: 23px;
+          color: white;
+          padding: 10px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 77px;
+            height: 77px;
+            margin-right: 6px;
+          }
+          .care-msg {
+            h5 {
+              font-size: 14px;
+              letter-spacing: 0.7px;
+              font-weight: bold;
+              margin: 6px 0 4px;
+            }
+            p {
+              font-size: 12px;
+              margin: 0;
+            }
+          }
+        }
+      }
+      .search-field {
+        margin: 24px 0 4% 0;
+        padding: 0 20px;
+        position: relative;
+        .iconify {
+          position: absolute;
+          z-index: 2;
+          font-size: 27px;
+          color: #aeb3c5;
+          top: 21%;
+          left: 11%;
+        }
+        input {
+          color: #848484;
+          background: #f1f2f4;
+          border: none;
+          padding: 13px 0;
+          border-radius: 43px;
+          width: 100%;
+          padding-left: 70px;
+          position: relative;
+          font-size: 14px;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+      .country-data {
+        padding: 0 20px 16px;
+        background-color: #fcfcfc;
+        border-radius: 25px 25px 28px 28px;
+
+        .searched-country {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 9px 0 9px 0;
+          .country-name {
+            display: flex;
+            align-items: center;
+            #country-flag {
+              object-fit: cover;
+              border-radius: 50%;
+              width: 25px;
+              height: 25px;
+              border: 1px solid #ffffff;
+              box-sizing: border-box;
+              margin-right: 15px;
+              box-shadow: 0px 1px 6px rgba(106, 106, 106, 0.38);
+            }
+            h6 {
+              margin: 0;
+              font-size: 14px;
+              color: #7d7d7d;
+              font-weight: bold;
+            }
+          }
+          .refresh-btn {
+            font-size: 24px;
+            color: #697dbf;
+          }
+        }
+        .covid-data-cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 13px;
+
+          .confirmed {
+            background-color: #ffe6ec;
+            color: #ff5a82;
+          }
+          .active {
+            background-color: #e8f3fe;
+            color: #3097ff;
+          }
+          .recovered {
+            background-color: #eaf7ed;
+            color: #2dbc4e;
+          }
+          .death {
+            background-color: #f0f1f3;
+            color: #848484;
+          }
+        }
+        .covid-data-cards > div {
+          padding: 13px 13px 5px;
+          border-radius: 18px;
+
+          h6 {
+            font-size: 14px;
+            margin-bottom: 35px;
+            text-transform: capitalize;
+          }
+          h4 {
+            font-size: 18px;
+            text-align: right;
+          }
+          h6,
+          h4 {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

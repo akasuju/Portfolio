@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body .container-fluid {
+  background-color: #e9e9f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+body .container-fluid .covid-tracker-app {
+  background-color: white;
+  width: 336px;
+  -webkit-box-shadow: 0px 0px 47px rgba(147, 147, 147, 0.53);
+          box-shadow: 0px 0px 47px rgba(147, 147, 147, 0.53);
+  border-radius: 28px;
+}
+
+body .container-fluid .covid-tracker-app .welcome-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 20px 5px 20px;
+}
+
+body .container-fluid .covid-tracker-app .welcome-sec .greeting .hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+body .container-fluid .covid-tracker-app .welcome-sec .greeting .hello h5 {
+  display: inline;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+body .container-fluid .covid-tracker-app .welcome-sec .greeting .hello .iconify {
+  font-size: 18px;
+}
+
+body .container-fluid .covid-tracker-app .welcome-sec .greeting p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #848899;
+}
+
+body .container-fluid .covid-tracker-app .welcome-sec .profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  -webkit-box-shadow: -3px 2px 7px rgba(53, 52, 52, 0.25);
+          box-shadow: -3px 2px 7px rgba(53, 52, 52, 0.25);
+}
+
+body .container-fluid .covid-tracker-app .help-container {
+  padding: 0 20px;
+}
+
+body .container-fluid .covid-tracker-app .help-container .checkup-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fb5c71;
+  -webkit-box-shadow: 0px 9px 16px rgba(191, 181, 181, 0.67);
+          box-shadow: 0px 9px 16px rgba(191, 181, 181, 0.67);
+  border-radius: 23px;
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container-fluid .covid-tracker-app .help-container .checkup-sec img {
+  width: 77px;
+  height: 77px;
+  margin-right: 6px;
+}
+
+body .container-fluid .covid-tracker-app .help-container .checkup-sec .care-msg h5 {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  margin: 6px 0 4px;
+}
+
+body .container-fluid .covid-tracker-app .help-container .checkup-sec .care-msg p {
+  font-size: 12px;
+  margin: 0;
+}
+
+body .container-fluid .covid-tracker-app .search-field {
+  margin: 24px 0 4% 0;
+  padding: 0 20px;
+  position: relative;
+}
+
+body .container-fluid .covid-tracker-app .search-field .iconify {
+  position: absolute;
+  z-index: 2;
+  font-size: 27px;
+  color: #aeb3c5;
+  top: 21%;
+  left: 11%;
+}
+
+body .container-fluid .covid-tracker-app .search-field input {
+  color: #848484;
+  background: #f1f2f4;
+  border: none;
+  padding: 13px 0;
+  border-radius: 43px;
+  width: 100%;
+  padding-left: 70px;
+  position: relative;
+  font-size: 14px;
+}
+
+body .container-fluid .covid-tracker-app .search-field input:focus {
+  outline: 0;
+}
+
+body .container-fluid .covid-tracker-app .country-data {
+  padding: 0 20px 16px;
+  background-color: #fcfcfc;
+  border-radius: 25px 25px 28px 28px;
+}
+
+body .container-fluid .covid-tracker-app .country-data .searched-country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 0 9px 0;
+}
+
+body .container-fluid .covid-tracker-app .country-data .searched-country .country-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container-fluid .covid-tracker-app .country-data .searched-country .country-name #country-flag {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 15px;
+  -webkit-box-shadow: 0px 1px 6px rgba(106, 106, 106, 0.38);
+          box-shadow: 0px 1px 6px rgba(106, 106, 106, 0.38);
+}
+
+body .container-fluid .covid-tracker-app .country-data .searched-country .country-name h6 {
+  margin: 0;
+  font-size: 14px;
+  color: #7d7d7d;
+  font-weight: bold;
+}
+
+body .container-fluid .covid-tracker-app .country-data .searched-country .refresh-btn {
+  font-size: 24px;
+  color: #697dbf;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 13px;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards .confirmed {
+  background-color: #ffe6ec;
+  color: #ff5a82;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards .active {
+  background-color: #e8f3fe;
+  color: #3097ff;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards .recovered {
+  background-color: #eaf7ed;
+  color: #2dbc4e;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards .death {
+  background-color: #f0f1f3;
+  color: #848484;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards > div {
+  padding: 13px 13px 5px;
+  border-radius: 18px;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards > div h6 {
+  font-size: 14px;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards > div h4 {
+  font-size: 18px;
+  text-align: right;
+}
+
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards > div h6,
+body .container-fluid .covid-tracker-app .country-data .covid-data-cards > div h4 {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
