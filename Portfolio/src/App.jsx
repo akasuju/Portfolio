@@ -13,6 +13,8 @@ const App = () => {
   <HomePage />
   <AboutMe />
   <ProjectPage/>
+  <Options/>
+  
  </div>
   )
 }
