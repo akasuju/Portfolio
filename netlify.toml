@@ -1,0 +1,15 @@
+[build]
+    publish = "dist"
+    command = "npm run build"
+
+[dev]
+    framework = "#auto"
+
+[functions]
+    directory = "functions"
+
+[redirects]
+    [[redirects]]
+        from = "/*"
+        to = "/index.html"
+        status = 200
