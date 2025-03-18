@@ -6,3 +6,8 @@
 .custom-bg{
     background-color: rgba(128,128,128,0.1);
 }
+
+.bg-custom{
+    background-image: url("../src/assets/BG.png");
+    background-size: cover;
+}
