@@ -1,7 +1,7 @@
 import React from 'react'
-import card1 from './card1.png'
-import card2 from './card2.png'
-import card3 from './card3.png'
+import card1 from '../assets/card1.png'
+import card2 from '../assets/card2.png'
+import card3 from '../assets/card3.png'
 
 
 const ProjectPage = () => {
@@ -12,6 +12,9 @@ const ProjectPage = () => {
         </div>
         <div className='headings'></div>
         <div className='headings'></div>
+        <img src={card1} alt="" />
+        <img src={card2} alt="" />
+        <img src={card3} alt="" />
     </div>
   )
 }
