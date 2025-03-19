@@ -10,7 +10,7 @@ const Works = () => {
   return (
     <div className='h-[70vh] md:h-[80vh] flex items-center justify-center gap-6 flex-col bg-custom'>
         <div className="heading text-white">
-            <h1 className='text-xl sm:text-3xl md:text-5xl '>My recent <span className='text-cyan-400'>works</span></h1>
+            <h1 className='text-xl sm:text-3xl md:text-5xl '> My Recent <span className='text-cyan-400'>works</span></h1>
         </div>
         <div className="options flex gap-4">
             <Options name={"All"}/>
